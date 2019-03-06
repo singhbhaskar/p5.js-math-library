@@ -1,8 +1,12 @@
 p5.prototype.createMatrix = function () {
-  let mat, m, n;
+  let m, n;
+  const mat = new p5.Matrix();
+
+  if (arguments.length === 0) {
+    return mat;
+  }
 
   try {
-    mat = new p5.Matrix();
     m = arguments[0].length;
     n = arguments[0][0].length;
 
@@ -19,10 +23,6 @@ p5.prototype.createMatrix = function () {
 
     return mat;
   } catch (e) {
-    if (e instanceof TypeError) {
-      return mat;
-    } else {
-      throw new Error('Input must be empty or a 2D Array');
-    }
+    throw new Error('Input must be empty or a 2D Array');
   }
 };
