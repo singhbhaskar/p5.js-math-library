@@ -1,0 +1,33 @@
+{
+  "name": "p5.math",
+  "version": "0.0.1",
+  "description": "A math library for p5.js",
+  "main": "p5.math.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "mocha-chrome test/test.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singhbhaskar/p5.js-math-library.git"
+  },
+  "keywords": [
+    "p5.js",
+    "math"
+  ],
+  "author": "The p5.math contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/singhbhaskar/p5.js-math-library/issues"
+  },
+  "homepage": "https://github.com/singhbhaskar/p5.js-math-library#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "mocha-chrome": "^2.0.0",
+    "p5": "^0.7.3"
+  }
+}
