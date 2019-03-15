@@ -27,6 +27,14 @@ describe('Complex numbers', function () {
       });
     });
 
+    describe('Creating j vector', function () {
+      it('Returns the unit vector 0 + 1i', function () {
+        let j = pInst.complex().getUnitY();
+        expect(j.a).to.equal(0);
+        expect(j.b).to.equal(1);
+      });
+    });
+
     describe('Creating a complex number with given a and b', function () {
       it('Returns the complex number 3 + 6i', function () {
         let z = pInst.complex(3, 6);
@@ -34,4 +42,33 @@ describe('Complex numbers', function () {
       });
     });
   });
+
+  it('Operations on complex numbers', function() {
+
+    describe('Modulus of a complex number', function() {
+      it('Returns the modulus of 3 + 4i, which is 5', function() {
+        let z = pInst.complex(3, 4); 
+        expect(z.modulus()).to.equal(5); 
+      })
+    });
+
+    describe('Phase angle of a complex number', function() {
+      it('Returns the phase angle of 1 + 1i, which is π/4 radians', function() {
+        let z = pInst.complex(1, 1); 
+        expect(z.phaseAngle()).to.equal(Math.PI/4); 
+      })
+    });
+
+    describe('Conjugate of a complex number', function() {
+      it('Returns the conjugate of 3 + 5i, which is 3 - 5i', function() {
+        let z = pInst.complex(3, 5); 
+        let c = z.conjugate(); 
+        expect(c.a).to.equal(3); 
+        expect(c.b).to.equal(-5); 
+        expect(c.toString()).to.equal("3 - 5i"); 
+      })
+    });
+
+  });
+
 });

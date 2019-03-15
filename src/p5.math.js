@@ -72,15 +72,20 @@ function Complex() {
   }
 
   this.modulus = function() {
-    return (sqrt(this.a ** 2 + this.b ** 2));
+    return (this.a ** 2 + this.b ** 2) ** 0.5;
   }
 
   this.phaseAngle = function() {
-    return atan2(this.y / this.x);
+    return Math.atan2(this.b, this.a); 
   }
 
   this.toString = function() {
-    return this.a + " + " + this.b + "i";
+    if (this.b >= 0) {
+      return this.a + " + " + this.b + "i";
+    }
+    else {
+      return this.a + " - " + (-1 * this.b) + "i"; 
+    }
   }
 
 };
