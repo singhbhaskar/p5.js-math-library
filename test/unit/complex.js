@@ -49,14 +49,14 @@ describe('Complex numbers', function () {
       it('Returns the modulus of 3 + 4i, which is 5', function() {
         let z = pInst.complex(3, 4); 
         expect(z.modulus()).to.equal(5); 
-      })
+      }); 
     });
 
     describe('Phase angle of a complex number', function() {
       it('Returns the phase angle of 1 + 1i, which is π/4 radians', function() {
         let z = pInst.complex(1, 1); 
         expect(z.phaseAngle()).to.equal(Math.PI/4); 
-      })
+      }); 
     });
 
     describe('Conjugate of a complex number', function() {
@@ -66,9 +66,30 @@ describe('Complex numbers', function () {
         expect(c.a).to.equal(3); 
         expect(c.b).to.equal(-5); 
         expect(c.toString()).to.equal("3 - 5i"); 
-      })
+      }); 
     });
 
+    describe('Adding two complex numbers', function() {
+      it('Returns the sum of 3 + 2i and 6 + 10i, which is 9 + 12i', function() {
+        let z = pInst.complex(3, 2); 
+        let z1 = pInst.complex(6, 10); 
+        let c = pInst.complex().add(z, z1); 
+        expect(c.a).to.equal(9); 
+        expect(c.b).to.equal(12); 
+        expect(c.toString()).to.equal("9 + 12i"); 
+      }); 
+    });
+
+    describe('Subtracting two complex numbers', function() {
+      it('Returns the sum of 3 + 2i and 6 + 10i, which is -3 - 8i', function() {
+        let z = pInst.complex(3, 2); 
+        let z1 = pInst.complex(6, 10); 
+        let c = pInst.complex().subtract(z, z1); 
+        expect(c.a).to.equal(-3); 
+        expect(c.b).to.equal(-8); 
+        expect(c.toString()).to.equal("-3 - 8i"); 
+      }); 
+    });
   });
 
 });
