@@ -1,2 +1,9 @@
+<<<<<<< HEAD
 some.js
 index.html
+=======
+.DS_Store
+.vagrant
+*.log
+node_modules
+>>>>>>> e3c8ab774accb9a325e66a62a2554ded21276114
