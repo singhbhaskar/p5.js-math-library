@@ -1,4 +1,4 @@
-describe('Complex numbers', function () {
+describe('Complex Numbers', function () {
   let pInst;
 
   beforeEach(function () {

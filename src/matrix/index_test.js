@@ -1,4 +1,4 @@
-describe('Matrices', function () {
+describe('Matrix', function () {
   let pInst;
 
   beforeEach(function () {
