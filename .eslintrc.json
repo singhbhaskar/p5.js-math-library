@@ -1,0 +1,20 @@
+{
+    "extends": "airbnb-base",
+    "globals": {
+        "fetch": false,
+        "document": true
+    },
+    "rules":{
+        "no-console":0,
+        "no-plusplus":0,
+        "prefer-const":0,
+        "no-undef":0
+    },
+    "env": {
+        "browser": true,
+        "jasmine": true
+    },
+    "settings": {
+      "import/resolver": "webpack"
+    }
+}
