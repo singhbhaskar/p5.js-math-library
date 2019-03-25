@@ -1,8 +1,8 @@
 ![p5.math](p5.math.png)
 # p5.math
-A p5.js library for numerical computing.
+A [p5.js](https://p5js.org) library for teaching, learning, and exploring mathematics.
 
-The goal of this project is to extend [p5.js](https://p5js.org) for teaching, learning, and exploring common math subjects including:
+This project aims to simplify the introduction of computational thinking in the math classroom and supercharge the math toolkit available to creative coders. Initial development is focused on foundational subjects including:
 - Algebra
 - Geometry
 - Complex Numbers
