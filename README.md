@@ -9,6 +9,7 @@ This project aims to simplify the introduction of computational thinking in the 
 - Trigonometry
 - Calculus
 - Matrices and Linear Algebra
+- Statistics
 
 ## Usage
 

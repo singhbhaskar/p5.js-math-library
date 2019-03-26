@@ -63,7 +63,7 @@ describe('Complex Numbers', function () {
       expect(c.toString()).toEqual("9 + 12i");
     });
 
-    it('Returns the sum of 3 + 2i and 6 + 10i, which is -3 - 8i', function() {
+    it('Returns the difference of 3 + 2i and 6 + 10i, which is -3 - 8i', function() {
       let z = pInst.complex(3, 2);
       let z1 = pInst.complex(6, 10);
       let c = pInst.complex().subtract(z, z1);

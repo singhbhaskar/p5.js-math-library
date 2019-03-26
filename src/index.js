@@ -4,6 +4,7 @@ import * as complex from './complex';
 import * as geometry from './geometry';
 import * as matrix from './matrix';
 import * as trigonometry from './trigonometry';
+import * as statistics from './statistics';
 import { version } from '../package.json';
 
 module.exports = {
@@ -13,5 +14,6 @@ module.exports = {
   geometry,
   matrix,
   trigonometry,
+  statistics,
   version,
 };
