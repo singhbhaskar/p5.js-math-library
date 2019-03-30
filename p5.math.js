@@ -1,5 +1,5 @@
 p5.Matrix = class{
-
+  // Still Needs to configure for modules (export not working)
   // Constructor to create a New Matrix using dimension or by providing a 1D or 2D Array.
   // If the input to the constructor is dimensions of matrix then the row & col will
   // store the dimensions and the matrix is initialized with 0's.

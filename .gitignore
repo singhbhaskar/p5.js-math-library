@@ -3,7 +3,10 @@ some.js
 index.html
 =======
 .DS_Store
-.vagrant
-*.log
 node_modules
+<<<<<<< HEAD
 >>>>>>> e3c8ab774accb9a325e66a62a2554ded21276114
+=======
+experiments
+manual-test
+>>>>>>> 4e03cb6397f9f3518c6379e293778e53c48b1308
