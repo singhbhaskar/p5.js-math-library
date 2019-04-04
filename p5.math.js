@@ -1,4 +1,4 @@
-p5.Matrix = class{
+class Matrix{
   // Still Needs to configure for modules (export not working)
   // Constructor to create a New Matrix using dimension or by providing a 1D or 2D Array.
   // If the input to the constructor is dimensions of matrix then the row & col will
@@ -109,6 +109,10 @@ p5.Matrix = class{
 
       return b;
   }
+}
+
+if (typeof module !== 'undefined') {
+  module.exports = Matrix;
 }
 
 
